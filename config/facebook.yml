@@ -1,0 +1,12 @@
+development:
+  app_id: <%= ENV["FB_APP_ID"] %>
+  secret_key: <%= ENV["FB_SECRET"] %>
+  validation_token: 38rjdehd93948rf
+test:
+  app_id: <%= ENV["FB_APP_ID"] %>
+  secret_key: <%= ENV["FB_SECRET"] %>
+  validation_token: 38rjdehd93948rf
+production:
+  app_id: <%= ENV["FB_APP_ID"] %>
+  secret_key: <%= ENV["FB_SECRET"] %>
+  validation_token: 38rjdehd93948rf

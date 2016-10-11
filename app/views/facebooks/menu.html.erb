@@ -1,0 +1,22 @@
+<h1>Authentication Services - Settings</h1>
+<%= @face.html_safe %>
+
+<% if !@token.nil? %>
+<br>
+<!-- token = <%= @token %> -->
+<br>
+<%= @me %>
+<br>
+<!-- <%= @pages %> -->
+<br>
+
+<% @pages.each do |page| %>
+  <% if page['perms'].include? 'ADMINISTER' %>
+  	<%= link_to page['name'], facebooks_manage_path(page['id']) %> <BR>
+  <% else %>
+	<%= page['name'] %> [does not have required permission] <BR>
+  <% end %>
+<% end %>
+
+
+<% end %>

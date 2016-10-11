@@ -1,0 +1,11 @@
+<br>
+<%= @me['name']  %>  <br>
+<!-- <%= @page_token %> -->
+<br>
+<% if @subs.empty?  %>
+   <%=	link_to 'subscribe', facebooks_subscribe_path(@me['id'])   %>
+<% else %>
+   <%=	link_to 'unsubscribe', facebooks_unsubscribe_path(@me['id'])   %>
+<% end %> 
+
+<br>
