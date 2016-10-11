@@ -1,24 +1,17 @@
-# README
+# fb-pages-webhook
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This example shows how to use facebook api to get user pages and subscribe 
+to the page events. 
 
-Things you may want to cover:
+I used 
+  - koala gem https://github.com/arsduo/koala
+  - facebook-messenger gem https://github.com/hyperoslo/facebook-messenger
+  
 
-* Ruby version
+The example is divided in two parts: 
 
-* System dependencies
+1. We log the user into our facebook app and get user pages 
 
-* Configuration
+2. We use facebook messenger to interact with pages conversations. 
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
