@@ -40,8 +40,15 @@ This makes facebook to go back to your server after auth.
 
 ### Edit config files
 
-Edit 'config/facebook.yml' and add you facebook app_id and secret. 
+Edit `config/facebook.yml` and add you facebook app_id and secret. 
 You can also modify here the validation token  
+
+```
+development:
+  app_id: <%= ENV["FB_APP_ID"] %>
+  secret_key: <%= ENV["FB_SECRET"] %>
+  validation_token: 38rjdehd93948rf
+```
 
 
 
@@ -49,14 +56,18 @@ You can also modify here the validation token
 
 run the rails apps
 
+```
 rails server 
-
+```
 
 
 and go to http://localhost:3000/ 
 
 
-Then log as your user
+Then log as your facebook user, select the pages you want to 
+get conversations and subscribre. 
+
+
 
 
 
